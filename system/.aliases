@@ -1,0 +1,36 @@
+
+alias gohome='cd ~; clear'
+
+alias aliases='cat $HOME/.dotfiles/system/.aliases'
+
+alias sendhdmiright='xrandr --output HDMI1 --auto --right-of LVDS1'
+
+# Python 3 quickly:
+alias pc='python3'
+
+# A better nano experience:
+alias nano='nano -wl -$'
+
+# A concise way of upgrading packages:
+alias upgrade='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+
+# Running GNOME control center:
+alias controlcenter='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
+
+# WIFI controls:
+alias wifi='wicd-client'
+
+# Suspend:
+alias suspend='systemctl suspend'
+
+# Perform 'ls' after 'cd' if successful:
+cdls() {
+	builtin cd "$*"
+	RESULT=$?
+	if [ "$RESULT" -eq 0 ]; then
+		pwd
+		ls
+	fi
+}
+
+
