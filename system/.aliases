@@ -30,6 +30,12 @@ function gcm() { git commit -m "$@"; }
 
 alias gp='git push'
 
+# Copy to/from clipboard:
+alias "c=xclip"
+alias "v=xclip -o"
+alias "cs=xclip -selection clipboard"
+alias "vs=xclip -o -selection clipboard"
+
 # Perform 'ls' after 'cd' if successful:
 cdls() {
 	builtin cd "$*"
