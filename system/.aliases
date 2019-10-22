@@ -23,6 +23,13 @@ alias wifi='wicd-client'
 # Suspend:
 alias suspend='systemctl suspend'
 
+# Common git commands:
+alias gaa='git add .'
+
+function gcm() { git commit -m "$@"; }
+
+alias gp='git push'
+
 # Perform 'ls' after 'cd' if successful:
 cdls() {
 	builtin cd "$*"
@@ -32,5 +39,3 @@ cdls() {
 		ls
 	fi
 }
-
-
