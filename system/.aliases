@@ -25,9 +25,6 @@ alias suspend='systemctl suspend'
 
 # Common git commands:
 alias gaa='git add .'
-
-function gcm() { git commit -m "$@"; }
-
 alias gp='git push'
 
 # Copy to/from clipboard:
