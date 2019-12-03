@@ -132,6 +132,7 @@ bindsym $mod+Shift+odiaeresis move container to workspace 10
 
 # Moving workspaces between screens
 bindsym $mod+p move workspace to output right
+bindsym $mod+o move workspace to output up
 
 # fancy i3lock screen.
 bindsym $mod+i exec i3lock-fancy -pf Helvetica-Oblique
