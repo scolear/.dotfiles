@@ -5,6 +5,7 @@ alias aliases='cat $HOME/.dotfiles/system/.aliases'
 
 alias sendhdmiright='xrandr --output HDMI1 --auto --right-of LVDS1'
 alias sendvgaabove='xrandr --output VGA1 --auto --above LVDS1'
+alias disconnectscreens='xrandr --output VGA1 --off --output HDMI1 --off --output'
 
 # Python 3 quickly:
 alias pc='python3'
